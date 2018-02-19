@@ -1,0 +1,209 @@
+.bandeau {
+    height: 100px;
+    background-color: #3D3F4C;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.bandeau #logo {
+    float: left;
+    height: 100px;
+}
+
+#title {
+    /* float: center; */
+    text-align: center;
+    padding-right: 100px;
+}
+
+#title h1 {
+    font-size: 2rem;
+}
+
+@media (max-width: 320px) {
+    #title {
+        float: left;
+        text-align: center;
+        padding-right: 0px;
+    }
+
+}
+
+.bloc {
+    padding: 0px 15px;
+    position: relative;
+    overflow: hidden;
+    height: 520px;
+}
+
+#bloc1 {
+    background-color: #738F7F;
+}
+
+.rond {
+    background-color: white;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.textrond {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+}
+
+.loremtitle {
+    font-size: 2.5rem;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.loremtext {
+    padding-left: 60px;
+    padding-top: 10px;
+    /* padding-bottom:
+    font-size: 1.4rem; */
+}
+
+#newsletter {
+    margin-top: 100px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+#mail {
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    width: 180px;
+}
+
+#envoyer {
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+    width: 72px;
+}
+
+#reseaux {
+    height: 120px;
+    background-color: #738F7F;
+    display: block;
+    position: absolute;
+    bottom: 100px;
+}
+
+#footer {
+    height: 100px;
+    background-color: #485158;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+}
+
+#footer p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.reseau {
+    background-color: #485158;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#reseaux1 {
+    display: block;
+    height: 50px;
+    width: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#reseau1 {
+
+}
+
+#reseau2 {
+}
+
+#reseau3 {
+
+}
+
+#reseau4 {
+    margin-right: 0px;
+}
+
+#bloc2 {
+    background-color: #485158;
+}
+
+#bloc3 {
+    background-color: #738F7F;
+}
+
+#bloc4 {
+    background-color: #485158;
+}
+
+#bloc5 {
+    background-color: #738F7F;
+}
+
+#bloc6 {
+    background-color: #485158;
+}
+
+@media (min-width: 992px) {
+
+    .rond {
+        float: right;
+        margin-top: 185px;
+    }
+
+    .blocRond {
+        padding-right: 0;
+    }
+
+    .blocRond2 {
+        float: right;
+    }
+
+    .arrowHorizontal {
+        padding: 0px;
+    }
+
+    .arrow {
+        height: 4px;
+        background-color: black;
+        display: block;
+        margin-top: 258px;
+    }
+
+    .paragraphe {
+        padding: 0px;
+    }
+
+    .paragraphe2 {
+        float: left;
+    }
+
+    .text {
+        display: inline-block;
+        background-color: white;
+        margin-top: 185px;
+        margin-right: 50px;
+        width: auto;
+    }
+}
