@@ -13,14 +13,10 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/cookie.css">
 </head>
 <body>
-<?php
-        /*
-         * index
-         */
-?>
+@include('cookie')
 <div class="container-fluid bandeau">
     <img src="logo.png" id="logo">
     <div id="title">
@@ -158,5 +154,6 @@
         </div>
     </div>
 </div>
+<script type="text/javascript" src="js/cookie.js"></script>
 </body>
 </html>

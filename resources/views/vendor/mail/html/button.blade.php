@@ -13,6 +13,7 @@
                                                                 border-bottom: 10px solid #E6A129;
                                                                 border-left: 18px solid #E6A129;
                                                                 color: black;
+                                                                font-weight: bold;
 
                                                         " class="button buttonGolden" target="_blank">{{ $slot }}</a>
                                 </td>

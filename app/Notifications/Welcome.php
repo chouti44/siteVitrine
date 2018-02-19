@@ -41,7 +41,7 @@ class Welcome extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->line('')
+                    ->line('You are news')
                     ->action('return of traderBook', url('/'))
                     ->line('Thank you for using our application!');
     }

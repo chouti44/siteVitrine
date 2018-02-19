@@ -2,17 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Session;
-use Illuminate\Support\Facades\Notification;
-use Illuminate\Support\Facades\Validator;
 use App\Models\EmailCustomer;
 use App\Notifications\Welcome;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Notification;
+use Illuminate\Support\Facades\Validator;
 
 /**
  * @Middleware("web")
  */
-
 class EmailCustomerController extends Controller
 {
     /**
