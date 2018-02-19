@@ -7,7 +7,14 @@
                         <table border="0" cellpadding="0" cellspacing="0">
                             <tr>
                                 <td>
-                                    <a href="{{ $url }}" class="button button-{{ $color or 'blue' }}" target="_blank">{{ $slot }}</a>
+                                    <a href="{{ $url }}" style="background-color: #E6A129;
+                                                                border-top: 10px solid #E6A129;
+                                                                border-right: 18px solid #E6A129;
+                                                                border-bottom: 10px solid #E6A129;
+                                                                border-left: 18px solid #E6A129;
+                                                                color: black;
+
+                                                        " class="button buttonGolden" target="_blank">{{ $slot }}</a>
                                 </td>
                             </tr>
                         </table>

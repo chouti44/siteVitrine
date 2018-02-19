@@ -7,7 +7,7 @@ use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 
-class InvoicePaid extends Notification
+class Welcome extends Notification
 {
     use Queueable;
 
@@ -41,8 +41,8 @@ class InvoicePaid extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->line('The introduction to the notification.')
-                    ->action('Notification Action', url('/'))
+                    ->line('')
+                    ->action('return of traderBook', url('/'))
                     ->line('Thank you for using our application!');
     }
 

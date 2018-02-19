@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'aldirch';
+    src: url('police\aldirch\Aldirch-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'arvo';
+    src: url('police\arvo\Arvo-Bold.ttf') format('truetype');
+    src: url('police\arvo\Arvo-BoldItalic.ttf') format('truetype');
+    src: url('police\arvo\Arvo-Italic.ttf') format('truetype');
+    src: url('police\arvo\Arvo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
