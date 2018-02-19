@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
 <head>
+    @include('cookie')
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,14 +14,8 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
-<?php
-        /*
-         * index
-         */
-?>
 <div class="container-fluid bandeau">
     <img src="logo.png" id="logo">
     <div id="title">

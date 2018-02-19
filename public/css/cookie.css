@@ -1,0 +1,16 @@
+.cookie-banner {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.cookie-banner.active {
+    display: block;
+}
+
+.cookie-button.active {
+    display: none;
+}
+
