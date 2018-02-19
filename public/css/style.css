@@ -17,6 +17,7 @@ body {
 #title {
     text-align: center;
     padding-right: 100px;
+    margin-top: 40px;
 }
 
 #title h1 {
@@ -51,7 +52,6 @@ body {
     margin: auto;
     margin-top: 50px;
     position: relative;
-    overflow: hidden;
 }
 
 .rond2 {
@@ -62,7 +62,6 @@ body {
     margin: auto;
     margin-top: 50px;
     position: relative;
-    overflow: hidden;
 }
 
 .textrond {
@@ -182,18 +181,30 @@ body {
 @media (min-width: 992px) {
 
     .rond {
-        float: right;
         margin-top: 185px;
+        float: right;
     }
 
     .rond2 {
-        background-color: white;
-        border-radius: 50%;
-        width: 150px;
-        height: 150px;
-        margin-top: 185px;
-        position: relative;
-        overflow: hidden;
+        margin-top: 185px;        
+        float: left;
+    }
+
+    .arrowRond {
+        height: 4px;
+        background-color: black;
+        display: inline-block;
+        margin-top: 258px;
+        width: 75px;
+        float: right;
+    }
+
+    .arrowRond2 {
+        height: 4px;
+        background-color: black;
+        display: inline-block;
+        margin-top: 258px;
+        width: 75px;
         float: left;
     }
 
@@ -213,6 +224,13 @@ body {
     .arrowHorizontal2 {
         padding: 0px;
         float: right;
+    }
+
+    .arrowVertical {
+        height: 20px;
+        width: 20px;
+        background-color: red;
+        display: inline-flex;
     }
 
     .arrow {

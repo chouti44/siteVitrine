@@ -17,7 +17,7 @@
     </head>
     <body>
     <div class="container-fluid bandeau">
-        <img src="logo.png" id="logo">
+        <img src="logoTraderBookFinal.png" id="logo">
         <div id="title">
             <h1>Traderbook</h1>
         </div>
@@ -25,6 +25,7 @@
     <div class="container-fluid bloc" id="bloc1">
         <div class="row">
             <div class="col-sm-12 col-md-4 blocRond">
+                <span class="arrowRond"></span>
                 <div class="rond">
                     <div class="textrond">
                         Tester
@@ -47,10 +48,12 @@
             </div>
         </div>
     </div>
+    <span class="arrowVertical"></span>
     <div class="container-fluid bloc" id="bloc2">
         <div class="row">
             <div class="col-sm-12 col-md-4
 			blocRond2">
+                <span class="arrowRond2"></span>
                 <div class="rond2">
                     <div class="textrond">
                         Analyser
@@ -75,16 +78,17 @@
     <div class="container-fluid bloc" id="bloc3">
         <div class="row">
             <div class="col-sm-12 col-md-4 blocRond">
+                <span class="arrowRond"></span>
                 <div class="rond">
                     <div class="textrond">
                         Déployer
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 arrowHorizontal">
+            <div class="col-md-4 arrowHorizontal">
                 <span class="arrow"></span>
             </div>
-            <div class="col-sm-12 col-md-5 paragraphe">
+            <div class="col-sm-12 col-md-4 paragraphe">
                 <div class="text">
                     <h2 class="loremtitle">
                         Lorem ipsum
@@ -99,16 +103,17 @@
     <div class="container-fluid bloc" id="bloc4">
         <div class="row">
             <div class="col-sm-12 col-md-4 blocRond2">
+                <span class="arrowRond2"></span>
                 <div class="rond2">
                     <div class="textrond">
                         Optimiser
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 arrowHorizontal2">
+            <div class="col-md-4 arrowHorizontal2">
                 <span class="arrow"></span>
             </div>
-            <div class="col-sm-12 col-md-5 paragraphe2">
+            <div class="col-sm-12 col-md-4 paragraphe2">
                 <div class="text2">
                     <h2 class="loremtitle">
                         Lorem ipsum
