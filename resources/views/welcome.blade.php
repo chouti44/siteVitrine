@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/app.css">
         <link rel="stylesheet" href="css/style.css">
 
     </head>
@@ -24,7 +24,7 @@
     </div>
     <div class="container-fluid bloc" id="bloc1">
         <div class="row">
-            <div class="col-sm-12 col-lg-4 blocRond">
+            <div class="col-sm-12 col-md-4 blocRond">
                 <div class="rond">
                     <div class="textrond">
                         Tester
@@ -32,10 +32,10 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 arrowHorizontal">
+            <div class="col-md-4 arrowHorizontal">
                 <span class="arrow"></span>
             </div>
-            <div class="col-sm-12 col-lg-5 paragraphe">
+            <div class="col-sm-12 col-md-4 paragraphe">
                 <div class="text">
                     <h2 class="loremtitle">
                         Lorem ipsum
@@ -49,19 +49,19 @@
     </div>
     <div class="container-fluid bloc" id="bloc2">
         <div class="row">
-            <div class="col-sm-12 col-lg-4
+            <div class="col-sm-12 col-md-4
 			blocRond2">
-                <div class="rond">
+                <div class="rond2">
                     <div class="textrond">
                         Analyser
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 arrowHorizontal">
+            <div class="col-md-4 arrowHorizontal2">
                 <span class="arrow"></span>
             </div>
-            <div class="col-sm-12 col-lg-5 paragraphe2">
-                <div class="text">
+            <div class="col-sm-12 col-md-4 paragraphe2">
+                <div class="text2">
                     <h2 class="loremtitle">
                         Lorem ipsum
                     </h2>
@@ -74,17 +74,17 @@
     </div>
     <div class="container-fluid bloc" id="bloc3">
         <div class="row">
-            <div class="col-sm-12 col-lg-4 blocRond">
+            <div class="col-sm-12 col-md-4 blocRond">
                 <div class="rond">
                     <div class="textrond">
                         Déployer
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 arrowHorizontal">
+            <div class="col-md-3 arrowHorizontal">
                 <span class="arrow"></span>
             </div>
-            <div class="col-sm-12 col-lg-5 paragraphe">
+            <div class="col-sm-12 col-md-5 paragraphe">
                 <div class="text">
                     <h2 class="loremtitle">
                         Lorem ipsum
@@ -98,18 +98,18 @@
     </div>
     <div class="container-fluid bloc" id="bloc4">
         <div class="row">
-            <div class="col-sm-12 col-lg-4 blocRond2">
-                <div class="rond">
+            <div class="col-sm-12 col-md-4 blocRond2">
+                <div class="rond2">
                     <div class="textrond">
                         Optimiser
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 arrowHorizontal">
+            <div class="col-md-3 arrowHorizontal2">
                 <span class="arrow"></span>
             </div>
-            <div class="col-sm-12 col-lg-5 paragraphe">
-                <div class="text">
+            <div class="col-sm-12 col-md-5 paragraphe2">
+                <div class="text2">
                     <h2 class="loremtitle">
                         Lorem ipsum
                     </h2>

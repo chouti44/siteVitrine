@@ -1,3 +1,7 @@
+body {
+    margin: 0px;
+}
+
 .bandeau {
     height: 100px;
     background-color: #3D3F4C;
@@ -11,7 +15,6 @@
 }
 
 #title {
-    /* float: center; */
     text-align: center;
     padding-right: 100px;
 }
@@ -51,6 +54,17 @@
     overflow: hidden;
 }
 
+.rond2 {
+    background-color: white;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
 .textrond {
     position: absolute;
     top: 50%;
@@ -68,12 +82,10 @@
 .loremtext {
     padding-left: 60px;
     padding-top: 10px;
-    /* padding-bottom:
-    font-size: 1.4rem; */
 }
 
 #newsletter {
-    margin-top: 100px;
+    margin-top: 200px;
     font-size: 1.4rem;
     text-align: center;
 }
@@ -98,6 +110,7 @@
     display: block;
     position: absolute;
     bottom: 100px;
+    width: 100%;
 }
 
 #footer {
@@ -106,6 +119,7 @@
     display: block;
     position: absolute;
     bottom: 0px;
+    width: 100%;
 }
 
 #footer p {
@@ -172,16 +186,33 @@
         margin-top: 185px;
     }
 
+    .rond2 {
+        background-color: white;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        margin-top: 185px;
+        position: relative;
+        overflow: hidden;
+        float: left;
+    }
+
     .blocRond {
         padding-right: 0;
     }
 
     .blocRond2 {
         float: right;
+        padding-left: 0;
     }
 
     .arrowHorizontal {
         padding: 0px;
+    }
+
+    .arrowHorizontal2 {
+        padding: 0px;
+        float: right;
     }
 
     .arrow {
@@ -189,14 +220,16 @@
         background-color: black;
         display: block;
         margin-top: 258px;
+        width: 100%;
     }
 
     .paragraphe {
-        padding: 0px;
+        padding: 0;
     }
 
     .paragraphe2 {
-        float: left;
+        float: left; 
+        padding: 0;
     }
 
     .text {
@@ -204,6 +237,15 @@
         background-color: white;
         margin-top: 185px;
         margin-right: 50px;
-        width: auto;
+        width: 300px;
+    }
+
+    .text2 {
+        display: inline-block;
+        background-color: white;
+        margin-top: 185px;
+        margin-left: 50px;
+        width: 300px;
+        float: right;
     }
 }
