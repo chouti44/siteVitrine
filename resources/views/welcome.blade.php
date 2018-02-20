@@ -13,11 +13,13 @@
         <!-- Styles -->
         <link rel="stylesheet" href="css/app.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/cookie.css">
 
     </head>
     <body>
+    @include('cookie')
     <div class="container-fluid bandeau">
-        <img src="logoTraderBookFinal.png" id="logo">
+        <img src="image/logo/logoTraderBookFinal.png" id="logo">
         <div id="title">
             <h1>Traderbook</h1>
         </div>
@@ -129,8 +131,12 @@
         <div id="newsletter">
             <p>Inscrivez-vous à la newsletter pour être au courant des nouvautés</p>
         </div>
-        <input type="text" placeholder="Adresse mail" id="mail">
-        <input type="button" value="Envoyer" id="envoyer">
+        {!! Form::open(['url' => '/index/' , 'method' => 'POST']) !!}
+        {!! Form::label('email', '') !!}
+        {!! Form::email('email', '', ['placeholder' => /* @lang('content.form.email') */ ''], ['id' => 'email']) !!} <br/> <br/>
+        {{ csrf_field() }}
+        {!! Form::submit('Send', ['id' => 'email'])!!}
+        {!! Form::close() !!}
     </div>
     <div class="container-fluid bloc" id="bloc6">
         <div class="row">
