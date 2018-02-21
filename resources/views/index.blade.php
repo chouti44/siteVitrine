@@ -138,10 +138,9 @@
                             <p>Inscrivez-vous à la newsletter pour être au courant des nouvautés</p>
                         </div>
                         {!! Form::open(['url' => '/index/' , 'method' => 'POST']) !!}
-                        {!! Form::label('email', '') !!}
-                        {!! Form::email('email', '', ['placeholder' => /* @lang('content.form.email') */ ''], ['id' => 'email']) !!} <br/> <br/>
+                        {!! Form::email('email', '', ['placeholder' => __('content.form.email')], ['id' => 'email']) !!} <br/> <br/>
                         {{ csrf_field() }}
-                        {!! Form::submit('Send', ['id' => 'email'])!!}
+                        {!! Form::submit(__('content.form.button'), ['id' => 'email'])!!}
                         {!! Form::close() !!}
                         <div class="swiper-pagination"></div>
                     </div>
