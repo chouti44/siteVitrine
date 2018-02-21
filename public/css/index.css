@@ -29,6 +29,7 @@ body {
     color: #094BFF;
 }
 
+/* ----   banner    ----*/
 #banner {
     height: 100px;
     background-color: #D5D5D5;
@@ -82,14 +83,50 @@ body {
     }
 }
 
+/* ----  finish  banner    ----*/
+
+.row {
+    margin: 0;
+}
+
+/* ----  swiper    ----*/
+
+.swiper-container .swiper-pagination-bullets {
+    right: -5px;
+    top: 50vh;
+    transform: rotate(90deg);
+}
+
+.bloc .swiper-pagination-bullet-active {
+    background: #094BFF !important;
+}
+
+.bloc .swiper-pagination-bullet {
+    background: #D5D5D5;
+}
+
+.bloc {
+    height: 100vh;
+}
+
+@media (min-width: 992px) {
+    .swiper-pagination-bullets {
+        display: none;
+    }
+}
+
+
+.mh-50 {
+    overflow: hidden;
+    height: 100vh;
+    padding: 0;
+}
+
 .bloc {
     padding: 0px 15px;
     position: relative;
     overflow: hidden;
     float: left;
-}
-
-#bloc1 {
 }
 
 .rond {
@@ -225,6 +262,11 @@ body {
 }
 
 @media (min-width: 992px) {
+
+    .mh-50 {
+        overflow: hidden;
+        height: 100vh;
+    }
 
     .bloc.swiper-slide {
         max-height: 500px;
