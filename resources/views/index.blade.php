@@ -40,7 +40,7 @@
                             <span class="arrowRond"></span>
                             <div class="rond">
                                 <div class="textrond">
-                                    Tester
+                                    @lang('content.step1.circle')
                                 </div>
                             </div>
                         </div>
@@ -50,10 +50,10 @@
                         <div class="col-sm-12 col-md-4 paragraphe">
                             <div class="text">
                                 <h2 class="loremtitle">
-                                    Lorem ipsum
+                                    @lang('content.step1.title')
                                 </h2>
                                 <p class="loremtext">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci iusto facere cumque, reiciendis dolores illum quos perferendis maiores harum quis dolorem consequatur beatae blanditiis esse aliquid nostrum. Placeat, modi, porro!
+                                    @lang('content.step1.text')
                                 </p>
                             </div>
                         </div>
@@ -61,12 +61,11 @@
                     </div>
                     <span class="arrowVertical"></span>
                     <div id="bloc2" class="bloc swiper-slide">
-                        <div class="col-sm-12 col-md-4
-                            blocRond2">
+                        <div class="col-sm-12 col-md-4 blocRond2">
                             <span class="arrowRond2"></span>
                             <div class="rond2">
                                 <div class="textrond">
-                                    Analyser
+                                    @lang('content.step2.circle')
                                 </div>
                             </div>
                         </div>
@@ -76,10 +75,10 @@
                         <div class="col-sm-12 col-md-4 paragraphe2">
                             <div class="text2">
                                 <h2 class="loremtitle">
-                                    Lorem ipsum
+                                    @lang('content.step2.title')
                                 </h2>
                                 <p class="loremtext">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci iusto facere cumque, reiciendis dolores illum quos perferendis maiores harum quis dolorem consequatur beatae blanditiis esse aliquid nostrum. Placeat, modi, porro!
+                                    @lang('content.step1.text')
                                 </p>
                             </div>
                         </div>
@@ -90,7 +89,7 @@
                             <span class="arrowRond"></span>
                             <div class="rond">
                                 <div class="textrond">
-                                    Déployer
+                                    @lang('content.step3.circle')
                                 </div>
                             </div>
                         </div>
@@ -100,10 +99,10 @@
                         <div class="col-sm-12 col-md-4 paragraphe">
                             <div class="text">
                                 <h2 class="loremtitle">
-                                    Lorem ipsum
+                                    @lang('content.step3.title')
                                 </h2>
                                 <p class="loremtext">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci iusto facere cumque, reiciendis dolores illum quos perferendis maiores harum quis dolorem consequatur beatae blanditiis esse aliquid nostrum. Placeat, modi, porro!
+                                    @lang('content.step3.text')
                                 </p>
                             </div>
                         </div>
@@ -114,7 +113,7 @@
                             <span class="arrowRond2"></span>
                             <div class="rond2">
                                 <div class="textrond">
-                                    Optimiser
+                                    @lang('content.step4.circle')
                                 </div>
                             </div>
                         </div>
@@ -124,10 +123,10 @@
                         <div class="col-sm-12 col-md-4 paragraphe2">
                             <div class="text2">
                                 <h2 class="loremtitle">
-                                    Lorem ipsum
+                                    @lang('content.step4.title')
                                 </h2>
                                 <p class="loremtext">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci iusto facere cumque, reiciendis dolores illum quos perferendis maiores harum quis dolorem consequatur beatae blanditiis esse aliquid nostrum. Placeat, modi, porro!
+                                    @lang('content.step4.text')
                                 </p>
                             </div>
                         </div>
@@ -166,7 +165,7 @@
     </div>
 </div>
 <footer class="container-fluid" id="footer">
-    <p>Footer</p>
+    <a href="{{url('/views/legalNotice.php')}}">@lang('content.legalNotice')</a>
 </footer>
 <script src="/js/swiper.min.js"></script>
 
