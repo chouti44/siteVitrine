@@ -109,13 +109,6 @@ body {
     height: 100vh;
 }
 
-@media (min-width: 992px) {
-    .swiper-pagination-bullets {
-        display: none;
-    }
-}
-
-
 .mh-50 {
     overflow: hidden;
     height: 100vh;
