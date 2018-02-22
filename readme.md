@@ -16,7 +16,5 @@ php artisan migrate
 # Démarrage du serveur PHP
 
 ```bash
-
-php -S localhost:8080 -d display_errors=1 -t ./public
-
+php artisan serve
 ```
