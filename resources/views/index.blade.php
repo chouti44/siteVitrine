@@ -165,7 +165,7 @@
     </div>
 </div>
 <footer class="container-fluid" id="footer">
-    <a href="{{url('/views/legalNotice.php')}}">@lang('content.legalNotice')</a>
+    <a href="{{ action('EmailCustomerController@legalNotice') }}">@lang('content.legalNotice')</a>
 </footer>
 <script src="/js/swiper.min.js"></script>
 

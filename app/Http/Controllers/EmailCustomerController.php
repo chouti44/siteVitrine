@@ -44,4 +44,11 @@ class EmailCustomerController extends Controller
 
         return redirect()->action('EmailCustomerController@email')->with('message', 'You are received email');
     }
+
+    /**
+     * @Get("/legalNotice")
+     */
+    public function legalNotice() {
+        return view('legalNotice');
+    }
 }
