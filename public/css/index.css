@@ -105,13 +105,8 @@ body {
     background: #D5D5D5;
 }
 
-.bloc {
-    height: 100vh;
-}
-
 .mh-50 {
     overflow: hidden;
-    height: 100vh;
     padding: 0;
 }
 
@@ -259,10 +254,6 @@ body {
     .mh-50 {
         overflow: hidden;
         height: 100vh;
-    }
-
-    .bloc.swiper-slide {
-        max-height: 500px;
     }
 
     .rond {
