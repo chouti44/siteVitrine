@@ -173,14 +173,14 @@
 <script>
     var swiper = new Swiper('.swiper-container', {
         direction: 'vertical',
-        noSwiping: false,
+        /* noSwiping: false,
         allowSlidePrev: false,
-        allowSlideNext: false,
+        allowSlideNext: false, */
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
-        },
-        breakpoints: {
+        }
+        /* breakpoints: {
             992: {
                 noSwiping: true,
                 allowSlidePrev: true,
@@ -191,7 +191,7 @@
                 allowSlidePrev: false,
                 allowSlideNext: false
             }
-        },
+        }, */
     });
 </script>
 </body>
