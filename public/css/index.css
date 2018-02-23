@@ -29,6 +29,14 @@ body {
     color: #094BFF;
 }
 
+.link {
+    color: #094BFF;
+}
+
+.link:hover {
+    color: #E6A129;
+}
+
 /* ----   banner    ----*/
 #banner {
     height: 100px;
@@ -108,6 +116,7 @@ body {
 .mh-50 {
     overflow: hidden;
     padding: 0;
+    height: 100vh;
 }
 
 .bloc {
@@ -186,15 +195,24 @@ body {
 }
 
 #footer {
-    height: 100px;
-    background-color: #485158;
+    height: 50px;
+    line-height: 50px;
+    background-color: #D5D5D5;
     bottom: 0px;
     width: 100%;
+    text-align: center;
+    padding: 0 15px;
 }
 
-#footer p {
-    text-align: center;
-    margin-top: 20px;
+#footerText {
+    font-family: "aldirch";
+    font-size: 1.5rem;
+    float: left;
+    font-weight: bold;
+}
+
+#footerLink {
+    float: right;
 }
 
 .reseau {

@@ -165,7 +165,8 @@
     </div>
 </div>
 <footer class="container-fluid" id="footer">
-    <a href="{{ action('EmailCustomerController@legalNotice') }}">@lang('content.legalNotice')</a>
+    <span id="footerText"><span class="colorBlue">&#9400; </span><span class="colorGolden">2018 </span><span class="colorBlue"> Trader</span><span class="colorGolden">Book</span></span>
+    <a id="footerLink" href="{{ action('EmailCustomerController@legalNotice') }}" class="link">@lang('content.legalNotice')</a>
 </footer>
 <script src="/js/swiper.min.js"></script>
 
