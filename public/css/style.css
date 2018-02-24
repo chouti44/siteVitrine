@@ -1,87 +1,444 @@
+/*
+// colors
+$black: #000000;
+$white: #FFFFFF;
+$whiteDark: #D5D5D5;
+$greyDark: #404040;
+$goldenDark: #E6A129;
+$goldenLight: #FFCC51;
+$blueDark: #094BFF;
+$blueLight: #2369FF;
+$red: #D32F2F;
+$green #43A047;
+*/
+
 body {
     margin: 0px;
+    background-color: #404040;
 }
 
-.bandeau {
+/* ----   boostrap    ----*/
+
+.row {
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.img-thumbnail {
+    min-height: 40vh;
+    height: auto;
+    display: block;
+    margin: 10px 0 15px 0;
+}
+
+/* ----   class general    ----*/
+
+.colorGolden {
+    color: #E6A129;
+}
+
+.colorBlue {
+    color: #094BFF;
+}
+
+.link {
+    color: #094BFF;
+}
+
+.link:hover {
+    color: #E6A129;
+}
+
+/* ----   banner    ----*/
+#banner {
     height: 100px;
-    background-color: #3D3F4C;
-    padding-left: 0px;
-    padding-right: 0px;
+    background-color: #D5D5D5;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 2px solid #404040;
 }
 
-.bandeau #logo {
+#bannerLogo {
     float: left;
-    height: 100px;
 }
 
-#title {
+#bannerLogo #bannerLogoContent {
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#bannerTitle {
+    float: left;
+    width: calc(100% - 90px);
+}
+
+#bannerTitle #bannerTitleContent {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'aldirch';
     text-align: center;
-    padding-right: 100px;
-    margin-top: 40px;
+    margin: 0;
+    line-height: 100px;
 }
 
-#title h1 {
-    font-size: 2rem;
-}
-
-@media (max-width: 320px) {
-    #title {
-        float: left;
-        text-align: center;
-        padding-right: 0px;
+@media (min-width: 992px) {
+    #banner {
+        height: 120px;
     }
 
+    #bannerLogo #bannerLogoContent {
+        height: 90px;
+        margin-top: 15px;
+        margin-left: 50px;
+    }
+
+    #bannerTitle {
+        width: calc(100% - 90px - 50px);
+    }
+
+    #bannerTitle #bannerTitleContent {
+        font-size: 4.5rem;
+        line-height: 120px;
+    }
 }
 
-.bloc {
+
+/* ----  swiper    ----*/
+
+.mh-50 {
+    overflow: hidden;
+    padding: 0;
+    height: calc(100vh - 150px);
+}
+
+.swiper-container {
+
+}
+.swiper-container .swiper-pagination-bullets {
+    right: -48px;
+    top: 35vh;
+    transform: rotate(90deg);
+}
+
+.swiper-container .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+}
+
+.step .swiper-pagination-bullet-active {
+    background: #094BFF !important;
+}
+
+.step .swiper-pagination-bullet {
+    background: #D5D5D5;
+}
+
+.step.stepEven .swiper-pagination-bullet {
+    background: #404040;
+}
+
+@media (min-width: 992px) {
+    .mh-50 {
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    .swiper-container .swiper-pagination-bullets {
+        top: 50vh;
+    }
+}
+
+/* ----  step    ----*/
+
+.step {
     padding: 0px 15px;
     position: relative;
     overflow: hidden;
-    height: 520px;
+    float: left;
 }
 
-#bloc1 {
-    background-color: #738F7F;
-}
-
-.rond {
+.stepCircle {
     background-color: white;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 7vh;
     position: relative;
 }
 
-.rond2 {
-    background-color: white;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin: auto;
-    margin-top: 50px;
-    position: relative;
-}
-
-.textrond {
+.stepCircleText {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2rem;
-}
-
-.loremtitle {
     font-size: 2.5rem;
-    padding-left: 30px;
-    padding-top: 10px;
+    font-weight: bold;
+    text-shadow: 5px 3px 20px #404040;
+    /* for IE */
+    filter : dropshadow(color=#404040, offx=5, offy=3) ;
 }
 
-.loremtext {
-    padding-left: 60px;
-    padding-top: 10px;
+.stepArrowHorizontal {
+    display: none;
 }
+
+.stepContent {
+
+}
+
+.stepContentTitle {
+    font-size: 2.5rem;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.stepContentText {
+    padding: 5px;
+}
+
+.stepArrowVertical {
+    display: none;
+}
+
+.stepColContent {
+    margin: 5vh auto;
+}
+
+
+.stepOdd {
+
+}
+
+.stepOdd .stepCircle {
+    background-color: #E6A129;
+    border: 7px solid #FFCC51;
+}
+
+.stepOdd .stepCircle .stepCircleText {
+    color: #094BFF;
+}
+
+.stepOdd .img-thumbnail {
+    border: 4px solid #2369FF;
+}
+
+.stepOdd .stepContentTitle {
+    color: #094BFF;
+}
+
+
+.stepEven {
+    background-color: #D5D5D5;
+}
+
+.stepEven .stepCircle {
+    background-color: #094BFF;
+    border: 7px solid #2369FF;
+}
+
+.stepEven .stepCircle .stepCircleText {
+    color: #E6A129;
+}
+
+.stepEven .img-thumbnail {
+    border: 4px solid #FFCC51;
+}
+
+.stepEven .stepContentTitle {
+    color: #E6A129;
+}
+
+@media (min-width: 992px) {
+    .step .stepCol {
+        position: relative;
+        overflow: hidden;
+        /* height: 100vh; */
+    }
+
+    .stepColCircle {
+        padding-right: 0;
+    }
+
+    .stepColArrow {
+        padding: 0;
+    }
+
+    .stepColContent {
+        margin: auto;
+        padding: 0 60px 0 0;
+    }
+
+    .stepContent {
+        height: 55vh;
+        z-index: 100;
+    }
+
+    .stepContentTitle {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .stepContentText {
+        padding: 20px;
+    }
+
+    .stepArrowHorizontal,
+    .stepContent,
+    .stepCircle {
+        margin-top: 50vh;
+        transform: translateY(-50%);
+    }
+
+    .stepCircle {
+        width: 250px;
+        height: 250px;
+        float: right;
+    }
+
+    .stepCircleText {
+        font-size: 3.5rem;
+    }
+
+    .stepOdd {
+        padding-right: 0;
+    }
+
+    .stepEven {
+        padding-left: 0;
+    }
+
+    .stepEven .stepColCircle,
+    .stepEven .stepColArrow {
+        float: right;
+    }
+
+    .stepEven .stepColCircle {
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 10vh;
+    }
+
+    .stepEven .stepCircle {
+        float: left;
+    }
+
+    .stepEven .stepColContent {
+        padding: 0;
+    }
+
+    .stepEven .stepContent {
+        margin-left: 60px;
+    }
+
+    /* --- arrow ---*/
+    .stepArrowVertical,
+    .stepArrowHorizontal {
+        display: block;
+    }
+
+    .stepArrow {
+        position: absolute;
+        display: block;
+        height: 9px;
+        background-color: black;
+        float: left;
+    }
+
+    .stepArrowHorizontal .stepArrow {
+        width: 93%;
+        float: left;
+        margin-top: 13px;
+        top: 0;
+        left: 0;
+    }
+
+    .stepArrowVertical .stepArrow {
+        width: 59vh;
+        z-index: 1;
+        transform: rotate(90deg);
+    }
+
+    .stepArrowImg {
+        float: right;
+        width: 35px;
+    }
+
+    .stepColArrow.stepArrowHorizontal .stepArrow{
+        position: absolute;
+    }
+
+    .stepArrowVertical .stepArrowVerticalBottom .stepArrow {
+        bottom: 0;
+    }
+
+    .stepArrowVertical.stepArrowVerticalTop {
+        position: relative;
+    }
+
+    .stepArrowVertical.stepArrowVerticalTop .stepArrow {
+        top: 0;
+    }
+
+    .stepEven {
+
+    }
+
+    .stepEven .stepArrowVertical.stepArrowVerticalTop .stepArrow {
+        top: -184px;
+        position: absolute;
+        width: 273px;
+    }
+
+    .stepEven .stepArrowVertical.stepArrowVerticalTop .stepArrowImg {
+        position: absolute;
+        width: 35px;
+        transform: rotate(90deg);
+        left: 120px;
+        top: -55px;
+    }
+
+    .stepEven .stepArrowHorizontal .stepArrow {
+        margin-left: 24px;
+    }
+
+    .stepEven .stepArrowHorizontal .stepArrowImg {
+        float: left;
+        transform: rotate(180deg);
+    }
+
+
+    .stepEven .stepArrowVertical.stepArrowVerticalBottom .stepArrow {
+        right: 0;
+    }
+
+    .stepOdd {
+
+    }
+
+    .stepOdd .stepArrowVertical.stepArrowVerticalTop .stepArrow {
+        top: -184px;
+        position: absolute;
+        width: 273px;
+    }
+
+    .stepOdd .stepArrowVertical.stepArrowVerticalTop .stepArrowImg{
+        position: absolute;
+        width: 35px;
+        transform: rotate(90deg);
+        left: 120px;
+        top: -55px;
+    }
+}
+
+/*--- finish step -- */
 
 #newsletter {
     margin-top: 200px;
@@ -103,7 +460,7 @@ body {
     width: 72px;
 }
 
-#reseaux {
+#stepSocialNetworks {
     height: 120px;
     background-color: #738F7F;
     display: block;
@@ -112,19 +469,6 @@ body {
     width: 100%;
 }
 
-#footer {
-    height: 100px;
-    background-color: #485158;
-    display: block;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-}
-
-#footer p {
-    text-align: center;
-    margin-top: 20px;
-}
 
 .reseau {
     background-color: #485158;
@@ -158,112 +502,24 @@ body {
     margin-right: 0px;
 }
 
-#bloc2 {
-    background-color: #485158;
+
+#footer {
+    height: 50px;
+    line-height: 50px;
+    background-color: #D5D5D5;
+    width: 100%;
+    text-align: center;
+    padding: 0 15px;
+    border-top: 2px solid #404040;
 }
 
-#bloc3 {
-    background-color: #738F7F;
+#footerText {
+    font-family: "aldirch";
+    font-size: 1.5rem;
+    float: left;
+    font-weight: bold;
 }
 
-#bloc4 {
-    background-color: #485158;
-}
-
-#bloc5 {
-    background-color: #738F7F;
-}
-
-#bloc6 {
-    background-color: #485158;
-}
-
-@media (min-width: 992px) {
-
-    .rond {
-        margin-top: 185px;
-        float: right;
-    }
-
-    .rond2 {
-        margin-top: 185px;        
-        float: left;
-    }
-
-    .arrowRond {
-        height: 4px;
-        background-color: black;
-        display: inline-block;
-        margin-top: 258px;
-        width: 75px;
-        float: right;
-    }
-
-    .arrowRond2 {
-        height: 4px;
-        background-color: black;
-        display: inline-block;
-        margin-top: 258px;
-        width: 75px;
-        float: left;
-    }
-
-    .blocRond {
-        padding-right: 0;
-    }
-
-    .blocRond2 {
-        float: right;
-        padding-left: 0;
-    }
-
-    .arrowHorizontal {
-        padding: 0px;
-    }
-
-    .arrowHorizontal2 {
-        padding: 0px;
-        float: right;
-    }
-
-    .arrowVertical {
-        height: 20px;
-        width: 20px;
-        background-color: red;
-        display: inline-flex;
-    }
-
-    .arrow {
-        height: 4px;
-        background-color: black;
-        display: block;
-        margin-top: 258px;
-        width: 100%;
-    }
-
-    .paragraphe {
-        padding: 0;
-    }
-
-    .paragraphe2 {
-        float: left; 
-        padding: 0;
-    }
-
-    .text {
-        display: inline-block;
-        background-color: white;
-        margin-top: 185px;
-        margin-right: 50px;
-        width: 300px;
-    }
-
-    .text2 {
-        display: inline-block;
-        background-color: white;
-        margin-top: 185px;
-        margin-left: 50px;
-        width: 300px;
-        float: right;
-    }
+#footerLink {
+    float: right;
 }
