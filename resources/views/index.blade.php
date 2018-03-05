@@ -158,21 +158,20 @@
                     <div id="step5" class="step stepOdd swiper-slide">
                         <div id="stepNewsletter" class="col-sm-12">
                             <div id="newsletter">
-                                <p>Inscrivez-vous à la newsletter pour être au courant des nouvautés</p>
+                                <p class="stepNewsletterText">@lang('content.form.text')</p>
                             </div>
-                            {{ Form::open(array('url' => '/index/', 'method' => 'POST', 'class'=>'form-horizontal')) }}
-                            {!! Form::open(['url' => '/index/' , 'method' => 'POST'], ['class' => 'form-horizontal']) !!}
-                                <div class="form-group has-success has-feedback">
-                                    <div class="col-sm-9">
-                                        <div class="input-group">
+                            <div class="form-horizontal stepNewsletterForm">
+                                {!! Form::open(['url' => '/index/' , 'method' => 'POST']) !!}
+                                    <div class="form-group has-success has-feedback">
+                                        <div class="input-group form-group">
                                             <span class="input-group-addon">@</span>
-                                            {!! Form::email('email', '', ['placeholder' => __('content.form.email')], ['id' => 'email, inputGroupSuccess2'], ['class' => 'form-control']) !!}
+                                            {!! Form::email('email', '', ['placeholder' => __('content.form.email'),'class' => 'form-control stepNewsletterFormEmail']) !!}
                                         </div>
                                     </div>
-                                </div>
-                            {{ csrf_field() }}
-                            {!! Form::submit(__('content.form.button'), ['id' => 'email'] , ['class' => 'btn btn-lg active'])!!}
-                            {!! Form::close() !!}
+                                {{ csrf_field() }}
+                                {!! Form::submit(__('content.form.button'), ['id' => 'email' , 'class' => 'btn btn-lg active stepNewsletterFormButton'])!!}
+                                {!! Form::close() !!}
+                            </div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>

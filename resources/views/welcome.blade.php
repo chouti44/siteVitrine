@@ -13,8 +13,8 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/app.css">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
     <link rel="stylesheet" href="css/cookie.css">
     <link rel="stylesheet" href="css/swiper.min.css">
 

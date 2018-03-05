@@ -27,6 +27,7 @@ return [
 
 
     'form' => [
+        'text' => 'Inscrivez-vous à la newsletter pour être au courant des nouveautés',
         'email' => 'Enter email',
         'button'    => 'Send',
     ],
