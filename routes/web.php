@@ -20,3 +20,4 @@ Route::get('/', function () {
 //});
 // Route::get('/index', 'EmailCustomerController@email');
 
+Route::post('changelocale', ['as' => 'changelocale', 'uses' => 'TranslationController@changeLocale']);

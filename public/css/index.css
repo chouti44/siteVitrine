@@ -73,7 +73,7 @@ body {
 
     #bannerTitle {
         float: left;
-        width: calc(100% - 90px);
+        width: calc(100% - 90px - 80px);
     }
 
         #bannerTitle #bannerTitleContent {
@@ -85,7 +85,44 @@ body {
             line-height: 100px;
         }
 
-@media (min-width: 992px) {
+        #bannerLang {
+            float: right;
+            width: 50px;
+            margin-top: 25px;
+        }
+            .bannerLangForm {
+                width: 90%;
+                margin: auto;
+                height: 40px;
+                border: 1px solid #094BFF;
+                border-radius: 5px;
+                text-align: center;
+                padding: 0;
+            }
+
+            .bannerLangForm:focus {
+                border: 1px solid #E6A129;
+                border-radius: 5px;
+            }
+
+            select:focus {
+                outline-offset: -2px;
+                border: 1px solid #E6A129;
+                border-radius: 5px;
+            }
+
+            :focus {
+                outline: -webkit-focus-ring-color auto 5px;
+                border-radius: 5px;
+            }
+
+@media (min-width: 380px) {
+    #bannerLang {
+        width: 80px;
+    }
+}
+
+    @media (min-width: 992px) {
     #banner {
         height: 120px;
     }
@@ -97,14 +134,25 @@ body {
         }
 
         #bannerTitle {
-            width: calc(100% - 90px - 50px);
+            width: calc(100% - 90px - 180px);
         }
 
         #bannerTitle #bannerTitleContent {
             font-size: 4.5rem;
             line-height: 120px;
         }
-}
+
+    #bannerLang {
+        width: 130px;
+        text-align: center;
+        margin-top: 35px;
+    }
+
+        .bannerLangForm {
+            width: 60%;
+        }
+    }
+
 
 
 /* ----  swiper    ----*/

@@ -1,5 +1,7 @@
 <?php
     return [
+        'en' => 'AN',
+        'fr' => 'FR',
         'close' => 'Fermer',
         'cookie' => 'Ce site utilise Google Analytics. En continuant à naviguer, vous nous autorisez à déposer un cookie à des fins de mesure d\'audience.',
         'legalNotice' => 'Mention légale',

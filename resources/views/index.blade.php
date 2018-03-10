@@ -28,140 +28,165 @@
     <div id="bannerTitle">
         <h1 id="bannerTitleContent"><span class="colorBlue">Trader</span><span class="colorGolden">Book</span></h1>
     </div>
-</div>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-12 mh-50">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div id="step1" class="step stepOdd swiper-slide">
-                        <div class="col-sm-12 col-md-4 stepCol stepColCircle">
-                            <!-- <span class="arrowRond"></span> -->
-                            <div class="stepCircle">
-                                <div class="stepCircleText">
-                                    @lang('content.step1.circle')
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 stepCol stepColArrow stepArrowHorizontal">
-                            <span class="stepArrow"></span>
-                            <img src="{{url('/image/icon/iconArrow.svg')}}" class="stepArrowImg"/>
-                        </div>
-                        <div class="col-sm-12 col-md-5 stepCol stepColContent">
-                            <div class="stepContent img-thumbnail">
-                                <h2 class="stepContentTitle">
-                                    @lang('content.step1.title')
-                                </h2>
-                                <p class="stepContentText">
-                                    @lang('content.step1.text')
-                                </p>
-                            </div>
-                            <div class="stepArrowVertical stepArrowVerticalBottom">
-                                <span class="stepArrow"></span>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                    <div id="step2" class="step stepEven swiper-slide">
-                        <div class="col-sm-12 col-md-4 stepCol stepColCircle">
-                            <div class="stepCircle">
-                                <div class="stepArrowVertical stepArrowVerticalTop">
-                                    <span class="stepArrow"></span>
-                                    <img src="{{url('/image/icon/iconArrow.svg')}}" class="stepArrowImg"/>
-                                </div>
-                                <div class="stepCircleText">
-                                    @lang('content.step2.circle')
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 stepCol stepColArrow stepArrowHorizontal">
-                            <img src="{{url('/image/icon/iconArrow.svg')}}" class="stepArrowImg"/>
-                            <span class="stepArrow"></span>
-                        </div>
-                        <div class="col-sm-12 col-md-5 stepCol stepColContent">
-                            <div class="stepContent img-thumbnail">
-                                <h2 class="stepContentTitle">
-                                    @lang('content.step2.title')
-                                </h2>
-                                <p class="stepContentText">
-                                    @lang('content.step1.text')
-                                </p>
-                            </div>
-                            <div class="stepArrowVertical stepArrowVerticalBottom">
-                                <span class="stepArrow"></span>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                    <div id="step3" class="step stepOdd swiper-slide">
-                        <div class="col-sm-12 col-md-4 stepCol stepColCircle">
-                            <div class="stepCircle">
-                                <div class="stepArrowVertical stepArrowVerticalTop">
-                                    <span class="stepArrow"></span>
-                                    <img src="{{url('/image/icon/iconArrow.svg')}}" class="stepArrowImg"/>
-                                </div>
-                                <div class="stepCircleText">
-                                    @lang('content.step3.circle')
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 stepCol stepColArrow stepArrowHorizontal">
-                            <span class="stepArrow"></span>
-                            <img src="{{url('/image/icon/iconArrow.svg')}}" class="stepArrowImg"/>
-                        </div>
-                        <div class="col-sm-12 col-md-5 stepCol stepColContent">
-                            <div class="stepContent img-thumbnail">
-                                <h2 class="stepContentTitle">
-                                    @lang('content.step3.title')
-                                </h2>
-                                <p class="stepContentText">
-                                    @lang('content.step3.text')
-                                </p>
-                            </div>
-                            <div class="stepArrowVertical">
-                                <span class="stepArrow"></span>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                    <div id="step4" class="step stepEven swiper-slide">
-                        <div class="col-sm-12 col-md-4 stepCol stepColCircle">
-                            <div class="stepCircle">
-                                <div class="stepArrowVertical stepArrowVerticalTop">
-                                    <span class="stepArrow"></span>
-                                    <img src="{{url('/image/icon/iconArrow.svg')}}" class="stepArrowImg"/>
-                                </div>
-                                <div class="stepCircleText">
-                                    @lang('content.step4.circle')
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 stepCol stepColArrow stepArrowHorizontal">
-                            <img src="{{url('/image/icon/iconArrow.svg')}}" class="stepArrowImg"/>
-                            <span class="stepArrow"></span>
-                        </div>
-                        <div class="col-sm-12 col-md-5 stepCol stepColContent">
-                            <div class="stepContent img-thumbnail">
-                                <h2 class="stepContentTitle">
-                                    @lang('content.step4.title')
-                                </h2>
-                                <p class="stepContentText">
-                                    @lang('content.step4.text')
-                                </p>
-                            </div>
-                            <div class="stepArrowVertical stepArrowVerticalBottom">
-                                <span class="stepArrow"></span>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                    <div id="step5" class="step stepOdd swiper-slide">
-                        <div id="stepNewsletter" class="col-sm-12">
-                            <div id="newsletter">
-                                <p class="stepNewsletterText">@lang('content.form.text')</p>
-                            </div>
-                            <div class="form-horizontal stepNewsletterForm">
-                                {!! Form::open(['url' => '/index/' , 'method' => 'POST']) !!}
+    <div id="bannerLang">
+        {!! Form::open(['method' => 'POST', 'route' => 'changelocale', 'class' => 'form-inline navbar-select']) !!}
+
+        <div class="form-group @if($errors->first('locale')) has-error @endif">
+            <span aria-hidden="true"><i class="fa fa-flag"></i></span>
+            {!! Form::select(
+                'locale',
+                ['en' => __('content.en'), 'fr' => __('content.fr')],
+                \App::getLocale(),
+                [
+                    'id'       => 'locale',
+                    'class'    => 'form-control custom-select bannerLangForm custom-select-lg mb-3',
+                    'required' => 'required',
+                    'onchange' => 'this.form.submit()',
+                ]
+            ) !!}
+            <small class="text-danger">{{ $errors->first('locale') }}</small>
+        </div>
+
+        <div class="btn-group pull-right sr-only">
+            {!! Form::submit("Change", ['class' => 'btn btn-success']) !!}
+        </div>
+
+        {!! Form::close() !!}
+     </div>
+ </div>
+ <div class="container-fluid">
+     <div class="row">
+         <div class="col-sm-12 mh-50">
+             <div class="swiper-container">
+                 <div class="swiper-wrapper">
+                     <div id="step1" class="step stepOdd swiper-slide">
+                         <div class="col-sm-12 col-md-4 stepCol stepColCircle">
+                             <!-- <span class="arrowRond"></span> -->
+                             <div class="stepCircle">
+                                 <div class="stepCircleText">
+                                     @lang('content.step1.circle')
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-md-3 stepCol stepColArrow stepArrowHorizontal">
+                             <span class="stepArrow"></span>
+                             <img src="{{url('/image/icon/iconArrow.svg')}}" class="stepArrowImg"/>
+                         </div>
+                         <div class="col-sm-12 col-md-5 stepCol stepColContent">
+                             <div class="stepContent img-thumbnail">
+                                 <h2 class="stepContentTitle">
+                                     @lang('content.step1.title')
+                                 </h2>
+                                 <p class="stepContentText">
+                                     @lang('content.step1.text')
+                                 </p>
+                             </div>
+                             <div class="stepArrowVertical stepArrowVerticalBottom">
+                                 <span class="stepArrow"></span>
+                             </div>
+                         </div>
+                         <div class="swiper-pagination"></div>
+                     </div>
+                     <div id="step2" class="step stepEven swiper-slide">
+                         <div class="col-sm-12 col-md-4 stepCol stepColCircle">
+                             <div class="stepCircle">
+                                 <div class="stepArrowVertical stepArrowVerticalTop">
+                                     <span class="stepArrow"></span>
+                                     <img src="{{url('/image/icon/iconArrow.svg')}}" class="stepArrowImg"/>
+                                 </div>
+                                 <div class="stepCircleText">
+                                     @lang('content.step2.circle')
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-md-3 stepCol stepColArrow stepArrowHorizontal">
+                             <img src="{{url('/image/icon/iconArrow.svg')}}" class="stepArrowImg"/>
+                             <span class="stepArrow"></span>
+                         </div>
+                         <div class="col-sm-12 col-md-5 stepCol stepColContent">
+                             <div class="stepContent img-thumbnail">
+                                 <h2 class="stepContentTitle">
+                                     @lang('content.step2.title')
+                                 </h2>
+                                 <p class="stepContentText">
+                                     @lang('content.step1.text')
+                                 </p>
+                             </div>
+                             <div class="stepArrowVertical stepArrowVerticalBottom">
+                                 <span class="stepArrow"></span>
+                             </div>
+                         </div>
+                         <div class="swiper-pagination"></div>
+                     </div>
+                     <div id="step3" class="step stepOdd swiper-slide">
+                         <div class="col-sm-12 col-md-4 stepCol stepColCircle">
+                             <div class="stepCircle">
+                                 <div class="stepArrowVertical stepArrowVerticalTop">
+                                     <span class="stepArrow"></span>
+                                     <img src="{{url('/image/icon/iconArrow.svg')}}" class="stepArrowImg"/>
+                                 </div>
+                                 <div class="stepCircleText">
+                                     @lang('content.step3.circle')
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-md-3 stepCol stepColArrow stepArrowHorizontal">
+                             <span class="stepArrow"></span>
+                             <img src="{{url('/image/icon/iconArrow.svg')}}" class="stepArrowImg"/>
+                         </div>
+                         <div class="col-sm-12 col-md-5 stepCol stepColContent">
+                             <div class="stepContent img-thumbnail">
+                                 <h2 class="stepContentTitle">
+                                     @lang('content.step3.title')
+                                 </h2>
+                                 <p class="stepContentText">
+                                     @lang('content.step3.text')
+                                 </p>
+                             </div>
+                             <div class="stepArrowVertical">
+                                 <span class="stepArrow"></span>
+                             </div>
+                         </div>
+                         <div class="swiper-pagination"></div>
+                     </div>
+                     <div id="step4" class="step stepEven swiper-slide">
+                         <div class="col-sm-12 col-md-4 stepCol stepColCircle">
+                             <div class="stepCircle">
+                                 <div class="stepArrowVertical stepArrowVerticalTop">
+                                     <span class="stepArrow"></span>
+                                     <img src="{{url('/image/icon/iconArrow.svg')}}" class="stepArrowImg"/>
+                                 </div>
+                                 <div class="stepCircleText">
+                                     @lang('content.step4.circle')
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-md-3 stepCol stepColArrow stepArrowHorizontal">
+                             <img src="{{url('/image/icon/iconArrow.svg')}}" class="stepArrowImg"/>
+                             <span class="stepArrow"></span>
+                         </div>
+                         <div class="col-sm-12 col-md-5 stepCol stepColContent">
+                             <div class="stepContent img-thumbnail">
+                                 <h2 class="stepContentTitle">
+                                     @lang('content.step4.title')
+                                 </h2>
+                                 <p class="stepContentText">
+                                     @lang('content.step4.text')
+                                 </p>
+                             </div>
+                             <div class="stepArrowVertical stepArrowVerticalBottom">
+                                 <span class="stepArrow"></span>
+                             </div>
+                         </div>
+                         <div class="swiper-pagination"></div>
+                     </div>
+                     <div id="step5" class="step stepOdd swiper-slide">
+                         <div id="stepNewsletter" class="col-sm-12">
+                             <div id="newsletter">
+                                 <p class="stepNewsletterText">@lang('content.form.text')</p>
+                             </div>
+                             <div class="form-horizontal stepNewsletterForm">
+                                 {!! Form::open(['url' => '/index/' , 'method' => 'POST']) !!}
                                     <div class="form-group has-success has-feedback">
                                         <div class="input-group form-group">
                                             <span class="input-group-addon">@</span>
