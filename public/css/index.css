@@ -495,7 +495,8 @@ body {
 }
 
 
-    #newsletter {
+    #newsletter,
+    #stepSocialNetworks {
         margin-top: 32px;
         font-size: 1.4rem;
         text-align: center;
@@ -571,7 +572,8 @@ body {
 
 
 @media (min-width: 992px) {
-    #stepNewsletter {
+    #stepNewsletter,
+    #stepSocialNetworks {
         padding: 0 30px;
         margin-top: 50vh;
         transform: translateY(-50%);
@@ -591,60 +593,33 @@ body {
     }
 }
 
-#mail {
-    border-radius: 10px;
-    display: block;
-    margin: 0 auto;
-    width: 180px;
-}
-
-#envoyer {
-    border-radius: 10px;
-    display: block;
-    margin: 20px auto;
-    width: 72px;
-}
-
 #stepSocialNetworks {
-    height: 120px;
-    background-color: #738F7F;
+    padding-top: 5rem;
+}
+
+#stepSocialNetworks .btn {
     display: block;
-    position: absolute;
-    bottom: 100px;
-    width: 100%;
+    padding: 1.5rem;
 }
 
-
-.reseau {
-    background-color: #485158;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 10px;
+.stepSocialNetworksIcon {
+    width: 5rem;
+    margin: auto;
 }
 
-#reseaux1 {
-    display: block;
-    height: 50px;
-    width: auto;
-    text-align: center;
-    margin-top: 30px;
-}
+@media (min-width: 992px) {
+    #stepSocialNetworks {
+        padding-top: 0;
+    }
 
-#reseau1 {
+    #stepSocialNetworks .btn {
+        display: inline-block;
+        padding: 3rem;
+    }
 
-}
-
-#reseau2 {
-}
-
-#reseau3 {
-
-}
-
-#reseau4 {
-    margin-right: 0px;
+    .stepSocialNetworksIcon {
+        width: 7rem;
+    }
 }
 
 

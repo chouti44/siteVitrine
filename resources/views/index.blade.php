@@ -147,20 +147,20 @@
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
-                    <div id="step6" class="stepEven swiper-slide">
-                        <div class="row">
-                            <div class="container-fluid" id="stepSocialNetworks">
-                                <div id="reseaux1">
-                                    <div id="reseau1" class="reseau">
-                                    </div>
-                                    <div id="reseau2" class="reseau">
-                                    </div>
-                                    <div id="reseau3" class="reseau">
-                                    </div>
-                                    <div id="reseau4" class="reseau">
-                                    </div>
-                                </div>
-                            </div>
+                    <div id="step6" class="stepEven step swiper-slide">
+                        <div id="stepSocialNetworks" class="col-sm-12">
+                            <a id="stepSocialNetworksIconFb" class="btn btn-social-icon btn-facebook" href="#">
+                                <img src="{{url('/image/icon/iconFb.svg')}}" class="stepSocialNetworksIcon"/>
+                            </a>
+                            <a id="stepSocialNetworksIconGit" class="btn btn-social-icon btn-github" href="#">
+                                <img src="{{url('/image/icon/iconGit.svg')}}" class="stepSocialNetworksIcon"/>
+                            </a>
+                            <a id="stepSocialNetworksIconIn" class="btn btn-social-icon btn-linkedin" href="#">
+                                <img src="{{url('/image/icon/iconLinkedin.svg')}}" class="stepSocialNetworksIcon"/>
+                            </a>
+                            <a id="stepSocialNetworksIconTwitter" class="btn btn-social-icon btn-twitter" href="#">
+                                <img src="{{url('/image/icon/iconTwitter.svg')}}" class="stepSocialNetworksIcon"/>
+                            </a>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
