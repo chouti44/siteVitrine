@@ -5,9 +5,7 @@ const cookieButton = document.getElementById('cookie-button');
 const GA_PROPERTY = 'UA-XXXXX-Y';
 const GA_COOKIE_NAMES = ['__utma', '__utmb', '__utmc', '__utmz', '_ga', '_gat'];
 
-cookieBanner.classList.add('active');
 cookieButton.onclick = function() {
-    cookieButton.classList.add('active');
     cookieBanner.classList.toggle('active');
 };
 
