@@ -70,6 +70,11 @@
         pagination: {
             el: '.swiper-pagination',
             clickable: true
+        },
+        mousewheel: {
+            invert: true,
+            releaseOnEdges: true,
+            forceToAxis: true,
         }
     });
 </script>
