@@ -14,7 +14,7 @@ $green #43A047;
 
 body {
     margin: 0px;
-    background-color: #404040;
+    /* background-color: #404040; */
 }
 
 /* ----   boostrap    ----*/
@@ -58,7 +58,6 @@ body {
     background-color: #D5D5D5;
     width: 100%;
     overflow: hidden;
-    border-bottom: 2px solid #404040;
 }
 
     #bannerLogo {
@@ -66,14 +65,14 @@ body {
     }
 
         #bannerLogo #bannerLogoContent {
-            height: 80px;
-            margin-top: 10px;
+            height: 70px;
+            margin-top: 15px;
             margin-left: 10px;
         }
 
     #bannerTitle {
         float: left;
-        width: calc(100% - 90px - 80px);
+        width: calc(100% - 90px - 70px);
     }
 
         #bannerTitle #bannerTitleContent {
@@ -87,13 +86,14 @@ body {
 
         #bannerLang {
             float: right;
-            width: 50px;
-            margin-top: 25px;
+            width: 54px;
+            margin-top: 33px;
+            margin-right: 10px;
         }
             .bannerLangForm {
                 width: 90%;
                 margin: auto;
-                height: 40px;
+                height: 30px;
                 border: 1px solid #094BFF;
                 border-radius: 5px;
                 text-align: center;
@@ -116,13 +116,8 @@ body {
                 border-radius: 5px;
             }
 
-@media (min-width: 380px) {
-    #bannerLang {
-        width: 80px;
-    }
-}
 
-    @media (min-width: 992px) {
+@media (min-width: 992px) {
     #banner {
         height: 120px;
     }
@@ -134,7 +129,7 @@ body {
         }
 
         #bannerTitle {
-            width: calc(100% - 90px - 180px);
+            width: calc(100% - 90px - 200px);
         }
 
         #bannerTitle #bannerTitleContent {
@@ -145,7 +140,7 @@ body {
     #bannerLang {
         width: 130px;
         text-align: center;
-        margin-top: 35px;
+        margin-top: 50px;
     }
 
         .bannerLangForm {
@@ -153,14 +148,12 @@ body {
         }
     }
 
-
-
 /* ----  swiper    ----*/
 
 .mh-50 {
     overflow: hidden;
     padding: 0;
-    height: calc(100vh - 150px);
+    /* height: calc(100vh - 150px); */
 }
 
 .swiper-container {
@@ -168,7 +161,7 @@ body {
 }
     .swiper-container .swiper-pagination-bullets {
         right: -48px;
-        top: 35vh;
+        top: 56vh;
         transform: rotate(90deg);
     }
 
@@ -202,6 +195,88 @@ body {
 }
 
 /* ----  step    ----*/
+#step1 {
+    background: url('/image/image/step1.jpg') top center no-repeat;
+    background-size: 800px 650px;
+    padding: 0;
+}
+
+    #step1 .stepCircle {
+        margin-top: 7vh;
+    }
+
+    #step1 .stepContent {
+        margin: 0 15px;
+    }
+
+    #step1 .swiper-pagination.swiper-pagination-bullets {
+        top: 64vh;
+    }
+
+#step2 {
+    background: url('/image/image/step2.jpg') top center no-repeat;
+    background-size: 800px 650px;
+}
+
+#step3 {
+    background: url('/image/image/step3.jpg') top center no-repeat;
+    background-size: 800px 650px;
+}
+
+#step4 {
+    background: url('/image/image/step4.jpg') top center no-repeat;
+    background-size: 800px 650px;
+}
+
+.stepCircleImg {
+    background: url('/image/image/circle.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#step6 {
+    display: block;
+    overflow: hidden;
+    height: 100vh;
+}
+
+    #step6 .swiper-pagination.swiper-pagination-bullets {
+        top: 48vh;
+    }
+
+@media (min-width: 701px) {
+    #step1,
+    #step2,
+    #step3,
+    #step4 {
+        background-size: auto;
+    }
+
+    #step1 .stepContent {
+        margin: 0 15px;
+    }
+
+}
+@media (min-width: 992px) {
+
+    #step1,
+    #step2,
+    #step4 {
+        background-size: contain;
+    }
+
+
+    #step3{
+        background-size: auto;
+    }
+    #step1 .stepArrowHorizontal,
+    #step1 .stepCircle {
+        margin-top: 35vh;
+    }
+
+    #step1 .stepContent {
+        margin-top: 35vh;
+    }
+}
 
 .step {
     padding: 0px 15px;
@@ -211,12 +286,13 @@ body {
 }
 
     .stepCircle {
+        opacity: 0.9;
         background-color: white;
         border-radius: 50%;
         width: 125px;
         height: 125px;
         margin: auto;
-        margin-top: 7vh;
+        margin-top: 15vh;
         position: relative;
     }
 
@@ -237,7 +313,7 @@ body {
         }
 
     .stepContent {
-
+        opacity: 0.9;
     }
 
         .stepContentTitle {
@@ -257,7 +333,7 @@ body {
         }
 
     .stepColContent {
-        margin: 5vh auto;
+        margin: 10vh auto;
     }
 
 
@@ -267,15 +343,16 @@ body {
 
     .stepOdd .stepCircle {
         background-color: #E6A129;
-        border: 7px solid #FFCC51;
+        border: 2px solid #FFCC51;
     }
 
         .stepOdd .stepCircle .stepCircleText {
             color: #094BFF;
+            text-shadow: none;
         }
 
         .stepOdd .img-thumbnail {
-            border: 4px solid #2369FF;
+            border: 2px solid #D5D5D5;
         }
 
         .stepOdd .stepContentTitle {
@@ -289,7 +366,7 @@ body {
 
     .stepEven .stepCircle {
         background-color: #094BFF;
-        border: 7px solid #2369FF;
+        border: 2px solid #2369FF;
     }
 
         .stepEven .stepCircle .stepCircleText {
@@ -297,7 +374,7 @@ body {
         }
 
         .stepEven .img-thumbnail {
-            border: 4px solid #FFCC51;
+            border: 2px solid #D5D5D5;
         }
 
         .stepEven .stepContentTitle {
@@ -396,8 +473,17 @@ body {
             position: absolute;
             display: block;
             height: 9px;
-            background-color: black;
+            background-color: #D5D5D5;
             float: left;
+        }
+
+        #step2 .stepArrow,
+        #step4 .stepArrow {
+            background-color: #000000;
+        }
+
+        #step1 .stepArrowVertical .stepArrow {
+            margin-top: 2rem;
         }
 
         .stepArrowHorizontal .stepArrow {
@@ -490,26 +576,23 @@ body {
 
 #stepNewsletter {
     padding: 0 30px;
-    margin-top: 25vh;
+    margin-top: 40vh;
     transform: translateY(-25%);
 }
 
-
     #newsletter,
     #stepSocialNetworks {
-        margin-top: 32px;
         font-size: 1.4rem;
         text-align: center;
     }
 
     .stepNewsletterText {
-        color: #D5D5D5;
+        color: #000000;
     }
 
     .stepNewsletterForm {
         margin: 50px 0;
     }
-
 
         .form-group.has-success.has-feedback {
             width: 100%;
@@ -564,12 +647,14 @@ body {
             margin: 30px auto !important;
         }
 
-
         .stepNewsletterFormButton:hover {
             background-color: #FFCC51;
             color: #000000;
         }
 
+#stepSocialNetworks {
+    margin-top: 23vh;
+}
 
 @media (min-width: 992px) {
     #stepNewsletter,
@@ -591,10 +676,6 @@ body {
     .btn {
         display: block;
     }
-}
-
-#stepSocialNetworks {
-    padding-top: 5rem;
 }
 
 #stepSocialNetworks .btn {
@@ -622,16 +703,25 @@ body {
     }
 }
 
-
 #footer {
     height: 50px;
     line-height: 50px;
     background-color: #D5D5D5;
     width: 100%;
     text-align: center;
+    display: block;
+    overflow: hidden;
     padding: 0 15px;
-    border-top: 2px solid #404040;
+    margin-top: 17vh;
 }
+
+@media (min-width: 992px) {
+    #footer {
+        margin-top: 25vh;
+        transform: translateY(-25%);
+    }
+}
+
 
 #footerText {
     font-family: "aldirch";

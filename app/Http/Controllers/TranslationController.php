@@ -22,7 +22,7 @@ class TranslationController extends Controller {
     */
     public function changeLocale(Request $request) {
         $this->validate($request, ['locale' => 'required|in:fr,en']);
-        Session::put('locale', $request->server('HTTP_ACCEPT_LANGUAGE'));
+        Session::put('locale', $request->locale);
 
         return redirect()->back();
     }
